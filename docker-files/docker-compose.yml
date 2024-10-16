@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+
+  chatproject:
+    image: chatproject
+    ports:
+      - "7070:7070"
+
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+
+    
+      
+
